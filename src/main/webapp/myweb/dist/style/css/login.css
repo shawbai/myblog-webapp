@@ -35,7 +35,6 @@ body, html {
 	box-sizing: border-box;
 }
 
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before, .clearfix:after {
 	content: " ";
 	display: table;
@@ -46,8 +45,8 @@ body, html {
 }
 
 body {
-	background: #66677c;
-	color: #494a5f;
+	background:#E3E3E5 url(../images/bg.jpg)  50% top scroll no-repeat;
+	color:#5d5d5d;
 	font-weight: 500;
 	font-size: 1.05em;
 	font-family: "Microsoft YaHei", "Segoe UI", "Lucida Grande", Helvetica,
@@ -68,67 +67,18 @@ a:hover, a:focus {
 }
 
 .login-container {
-	margin: 0 auto;
+	margin: auto auto;
 }
 
-.bgcolor-1 {
-	background: #f0efee;
-}
-
-.bgcolor-2 {
-	background: #f9f9f9;
-}
-
-.bgcolor-3 {
-	background: #e8e8e8;
-} /*light grey*/
-.bgcolor-4 {
-	background: #2f3238;
-	color: #fff;
-} /*Dark grey*/
-.bgcolor-5 {
-	background: #df6659;
-	color: #521e18;
-} /*pink1*/
-.bgcolor-6 {
-	background: #2fa8ec;
-} /*sky blue*/
-.bgcolor-7 {
-	background: #d0d6d6;
-} /*White tea*/
-.bgcolor-8 {
-	background: #3d4444;
-	color: #fff;
-} /*Dark grey2*/
-.bgcolor-9 {
-	background: #ef3f52;
-	color: #fff;
-} /*pink2*/
-.bgcolor-10 {
-	background: #64448f;
-	color: #fff;
-} /*Violet*/
-.bgcolor-11 {
-	background: #3755ad;
-	color: #fff;
-} /*dark blue*/
-.bgcolor-12 {
-	background: #3498DB;
-	color: #fff;
-} /*light blue*/
-.bgcolor-20 {
-	background: #494A5F;
-	color: #D5D6E2;
-}
 /* Header */
-.login-header {
+#header {
 	padding: 1em 190px 1em;
 	letter-spacing: -1px;
 	text-align: center;
-	background: #66677c;
+/* 	background: #66677c; */
 }
 
-.login-header h1 {
+#header h1 {
 	color: #D5D6E2;
 	font-weight: 600;
 	font-size: 2em;
@@ -136,7 +86,7 @@ a:hover, a:focus {
 	margin-bottom: 0;
 }
 
-.login-header h1 span {
+#header h1 span {
 	display: block;
 	font-size: 60%;
 	font-weight: 400;
@@ -144,51 +94,18 @@ a:hover, a:focus {
 	color: #c3c8cd;
 }
 
-@media screen and (max-width: 1024px) {
-	.login-header {
-		padding: 2em 10% 2em;
-	}
-	.login-header h1 {
-		font-size: 1.4em;
-	}
-}
-
-@media screen and (max-width: 960px) {
-	.login-header {
-		padding: 2em 10% 2em;
-	}
-	.login-header h1 {
-		font-size: 1.2em;
-	}
-}
-
-@media screen and (max-width: 766px) {
-	.login-header h1 {
-		font-size: 1.3em;
-	}
-}
-
-@media screen and (max-width: 640px) {
-	.login-header {
-		padding: 2em 10% 2em;
-	}
-	.login-header h1 {
-		font-size: 1em;
-	}
-}
-
 .form-bg {
-	background: #66677c;
+/* 	background: #66677c; */
 }
 
-.form-horizontal {
+.form-login {
 	background: #fff;
 	padding-bottom: 40px;
 	border-radius: 15px;
 	text-align: center;
 }
 
-.form-horizontal .heading {
+.form-login .heading {
 	display: block;
 	font-size: 35px;
 	font-weight: 700;
@@ -197,29 +114,29 @@ a:hover, a:focus {
 	margin-bottom: 30px;
 }
 
-.form-horizontal .form-group {
+.form-login .form-group {
 	padding: 0 40px;
 	margin: 0 0 25px 0;
 	position: relative;
 }
 
-.form-horizontal .form-control {
+.form-login .form-control {
 	background: #f0f0f0;
 	border: none;
-	border-radius: 20px;
+	/* border-radius: 20px; */
 	box-shadow: none;
 	padding: 0 20px 0 45px;
 	height: 40px;
 	transition: all 0.3s ease 0s;
 }
 
-.form-horizontal .form-control:focus {
+.form-login .form-control:focus {
 	background: #e0e0e0;
 	box-shadow: none;
 	outline: 0 none;
 }
 
-.form-horizontal .form-group i {
+.form-login .form-group i {
 	position: absolute;
 	top: 12px;
 	left: 60px;
@@ -228,11 +145,11 @@ a:hover, a:focus {
 	transition: all 0.5s ease 0s;
 }
 
-.form-horizontal .form-control:focus+i {
+.form-login .form-control:focus+i {
 	color: #00b4ef;
 }
 
-.form-horizontal .fa-eye-slash{
+.form-login .fa-eye-slash{
 	display: inline-block;
 	position: absolute;
 	top: 12px;
@@ -242,7 +159,7 @@ a:hover, a:focus {
 	transition: all 0.5s ease 0s;
 }
 
-.form-horizontal .fa-eye{
+.form-login .fa-eye{
     display: inline-block;
     position: absolute;
     top: 12px;
@@ -252,11 +169,11 @@ a:hover, a:focus {
     transition: all 0.5s ease 0s;
 }
 
-.form-horizontal .fa-question-circle:hover {
+.form-login .fa-question-circle:hover {
 	color: #000;
 }
 
-.form-horizontal .main-checkbox {
+.form-login .main-checkbox {
 	float: left;
 	width: 20px;
 	height: 20px;
@@ -267,7 +184,7 @@ a:hover, a:focus {
 	border: 1px solid #494a5f;
 }
 
-.form-horizontal .main-checkbox label {
+.form-login .main-checkbox label {
 	width: 20px;
 	height: 20px;
 	position: absolute;
@@ -276,7 +193,7 @@ a:hover, a:focus {
 	cursor: pointer;
 }
 
-.form-horizontal .main-checkbox label:after {
+.form-login .main-checkbox label:after {
 	content: "";
 	width: 10px;
 	height: 5px;
@@ -292,16 +209,16 @@ a:hover, a:focus {
 	transform: rotate(-45deg);
 }
 
-.form-horizontal .main-checkbox input[type=checkbox] {
+.form-login .main-checkbox input[type=checkbox] {
 	visibility: hidden;
 }
 
-.form-horizontal .main-checkbox input[type=checkbox]:checked+label:after
+.form-login .main-checkbox input[type=checkbox]:checked+label:after
 	{
 	opacity: 1;
 }
 
-.form-horizontal .text {
+.form-login .text {
 	float: left;
 	margin-left: 7px;
 	line-height: 20px;
@@ -309,7 +226,7 @@ a:hover, a:focus {
 	text-transform: capitalize;
 }
 
-.form-horizontal .btn {
+.form-login .btn {
 	float: right;
 	font-size: 14px;
 	color: #fff;
@@ -321,14 +238,12 @@ a:hover, a:focus {
 	transition: all 0.5s ease 0s;
 }
 
-@media only screen and (max-width: 479px) {
-	.form-horizontal .form-group {
-		padding: 0 25px;
-	}
-	.form-horizontal .form-group i {
-		left: 45px;
-	}
-	.form-horizontal .btn {
-		padding: 10px 20px;
-	}
+.captcha img {
+	border: 1px solid #d9d9d9;
+	border-radius: 3px;
+	max-width: 100px;
+	max-height: 36px;
+	width: 100px;
+	height: 40px;
+	vertical-align: middle;
 }

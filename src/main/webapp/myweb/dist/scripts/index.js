@@ -74,11 +74,10 @@ define(function(require) {
             }
         }
         //超过5次显示验证码
-        captchaShow();
         function captchaShow() {
             var captchaTime = getCookie('_capt');
             if (captchaTime > 5) {
-                $captcha.parent().parent().show();
+                $captcha.parent().show();
             }
         }
         checkRemmberMe();

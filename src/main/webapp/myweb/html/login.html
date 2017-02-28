@@ -14,51 +14,59 @@
 </head>
 <body>
 	<div class="login-container">
-		<header class="login-header">
-		<h1>
-			登陆界面<span>Bootstrap Form Style</span>
-		</h1>
-		</header>
+		<!--header start-->
+		<div id="header">
+			<h1>
+				登陆界面<span>Bootstrap Form Style</span>
+			</h1>
+			<!--header end-->
+		</div>
+		<!--content start-->
 		<div class="form-bg" style="padding: 20px 0;">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-offset-3 col-md-6">
-						<form class="form-horizontal" id="loginForm" method="post" action="/"> 
+						<form class="form-login" id="loginForm" method="post" action="/">
 							<span class="heading">用户登录</span>
-							<div class="alert alert-danger error-message" style="visibility: hidden;"></div>
 							<div class="form-group">
-								<input class="form-control" id="username" class="input i-user" autocomplete="off" type="text" name="memberName" maxlength="50" placeholder="请输入账号"> <i class="fa fa-user"></i>
-							</div>
-							<div class="form-group">
-								<input class="form-control" id="password" class="input i-lock" type="password" name="password" maxlength="30" autocomplete="off" placeholder="请输入密码"> <i class="fa fa-lock"></i> <a
-									href="#" class="fa fa-eye-slash"></a>
-							</div>
-							<div class="form-group" class="captcha" style="display: none;">
-							<div class="col-sm-4">
-								<input id="captcha" class="form-control" type="text"
-									name="captchaCode" maxlength="4" autocomplete="off"
-									placeholder="验证码"> 
-							</div>	
-							<div class="col-sm-8">
-								<a id="updateCaptcha" href="javascript:;"> 
-								<img src="" style="visibility: hidden;">
-								<span color="#000000">换一张</span>
-								</a>
-							</div>
+								<input class="form-control" id="username" class="input i-user"
+									autocomplete="off" type="text" name="memberName" maxlength="50"
+									placeholder="请输入账号"> <i class="fa fa-user"></i>
 							</div>
 							<div class="form-group">
+								<input class="form-control" id="password" class="input i-lock"
+									type="password" name="password" maxlength="30"
+									autocomplete="off" placeholder="请输入密码"> <i
+									class="fa fa-lock"></i> <a href="#" class="fa fa-eye-slash"></a>
+							</div>
+							<div class="form-group captcha" style="display: none;height: 40px;">
+								<div class="col-sm-4">
+									<input id="captcha" class="form-control"   type="text"
+										name="captchaCode" maxlength="4" autocomplete="off"
+										placeholder="验证码">
+								</div>
+								<div class="col-sm-8">
+									<a id="updateCaptcha" href="javascript:;"> <img src=""
+										style="visibility: hidden;"> <span color="#000000">换一张</span>
+									</a>
+								</div>
+							</div>
+							<div class="form-group"  style="height: 40px;">
 								<div class="main-checkbox">
 									<input type="checkbox" value="None" id="remmberMe" name="check" />
 									<label for="remmberMe"></label>
 								</div>
 								<span class="text">记住账号</span>
-                                <button class="btn btn-default" id="submit">登录</button>
+								<button class="btn btn-default" id="submit">登录</button>
 							</div>
+							<div class="alert alert-danger error-message"
+								style="visibility: hidden;"></div>
 						</form>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!--content end-->
 	</div>
 
 </body>
@@ -66,6 +74,6 @@
 <script data-main="../dist/app.js"
 	src="../dist/vendors/require/require.js"></script>
 <script>
-require(['scripts/login'], function(login) {
-})
+	require([ 'scripts/login' ], function(login) {
+	})
 </script>
