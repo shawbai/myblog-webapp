@@ -1,7 +1,5 @@
 package com.shaw.myblog.controller;
 
-import java.util.HashMap;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
