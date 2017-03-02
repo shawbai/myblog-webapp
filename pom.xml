@@ -199,6 +199,11 @@
             <version>2.4.2</version>
         </dependency>
 
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.4.1</version>
+        </dependency>
 	</dependencies>
 	<build>
 		<finalName>myblog-webapp</finalName>

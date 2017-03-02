@@ -78,3 +78,6 @@ text-align:center;padddding:2px 5px;border:1px solid #AC9696;border-radius:2px;}
 #footer{width:1000px;height:50px;margin:10px auto;border-top:1px solid #ccc;}
 #footer p{text-align:center;font-size:14px;color:#231C25;}
 #footer p a{color:#231C25;}
+[v-cloak] {
+display: none;
+} 

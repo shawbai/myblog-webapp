@@ -17,6 +17,7 @@ import com.shaw.myblog.common.utils.CaptchaCacheUtil;
 import com.shaw.myblog.common.utils.CookieUtils;
 import com.shaw.myblog.common.utils.SHA1MD5;
 import com.shaw.myblog.common.utils.StringUtil;
+import com.shaw.myblog.common.utils.WebUtil;
 import com.shaw.myblog.facade.user.pojo.dto.MemberDto;
 import com.shaw.myblog.facade.user.pojo.vo.LoginVo;
 import com.shaw.myblog.facade.user.service.MemberQueryFacade;
@@ -42,6 +43,7 @@ public class LoginController {
 	@RequestMapping("/login")
 	@ResponseBody
 	public Object login(HttpServletRequest req, HttpServletResponse resp, LoginVo LoginVo) {
+		System.out.println(WebUtil.getRemoteAddr(req));
 		System.out.println(req.getRequestURL());
 		int temErrorNum = 0;
 		String errorNum = CookieUtils.getCookieValue(req, Input_ERROR_COUNT);
